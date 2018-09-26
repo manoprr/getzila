@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h2">18sp</dimen>
+    <dimen name="h3">10sp</dimen>
+    <dimen name="h1">24sp</dimen>
+    <dimen name="m1">25dp</dimen>
+    <dimen name="m2">10dp</dimen>
+    <dimen name="height_banner">200dp</dimen>
+    <dimen name="height_topcourse">120dp</dimen>
+    <dimen name="avatar">80dp</dimen>
+</resources>

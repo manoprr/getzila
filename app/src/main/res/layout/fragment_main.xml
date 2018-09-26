@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Login-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+
+                    <!--icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_account" />
+
+                    <!--Text-->
+                    <TextView
+                        android:id="@+id/txtlogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:text="Login"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/h2"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--Search-->
+            <TextView
+                android:hint="Search"
+                android:background="@drawable/textfield_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--Banner-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerBanner"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"/>
+
+            <!--Course-->
+            <TextView
+                android:layout_marginTop="@dimen/m1"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="Top Course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerCourse"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+
+
+            <!--Category-->
+            <TextView
+                android:layout_marginTop="@dimen/m1"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--Foot Bar-->
+
+
+</RelativeLayout>
